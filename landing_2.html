@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Женщины-медики глазами Веры Бельской</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-paper: #f8f5f0;
+            --color-dark: #2c3e50;
+            --color-accent: #8b1e1e;
+            --color-gold: #c9a96e;
+            --color-text: #333;
+            --color-light: #e8e1d4;
+            --color-red-thread: #8b1e1e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-paper);
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23e8e1d4' fill-opacity='0.3' fill-rule='evenodd'/%3E%3C/svg%3E");
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        /* Красная нить - визуальный элемент сторителлинга */
+        .red-thread {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, transparent, var(--color-red-thread), transparent);
+            transform: translateX(-50%);
+            z-index: -1;
+            opacity: 0.3;
+        }
+        
+        .thread-knot {
+            position: absolute;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            background-color: var(--color-red-thread);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            opacity: 0.5;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--color-dark);
+            margin-bottom: 1rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.9)), 
+                        url('images/фон_главный.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            animation: fadeInUp 1.5s ease;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        
+        .hero h1:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 3px;
+            background-color: var(--color-red-thread);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+            color: var(--color-light);
+        }
+        
+        .hero-quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 20px;
+            border-left: 4px solid var(--color-red-thread);
+            background-color: rgba(139, 30, 30, 0.1);
+            border-radius: 5px;
+        }
+        
+        .typing-animation {
+            font-size: 1.8rem;
+            margin: 2rem 0;
+            min-height: 60px;
+        }
+        
+        .typing-text {
+            display: inline-block;
+            border-right: 3px solid var(--color-gold);
+            padding-right: 5px;
+            animation: blink 1s infinite;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: var(--color-accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: 500;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            text-transform: uppercase;
+            margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .btn:hover:before {
+            left: 100%;
+        }
+        
+        .btn:hover {
+            background-color: transparent;
+            border-color: var(--color-gold);
+            color: var(--color-gold);
+            transform: translateY(-3px);
+        }
+        
+        /* Narrative Section */
+        .narrative-section {
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .narrative-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .narrative-title:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            background-color: var(--color-red-thread);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .narrative-card {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 80px;
+            position: relative;
+        }
+        
+        .narrative-card.reverse {
+            flex-direction: row-reverse;
+        }
+        
+        .narrative-img {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+        }
+        
+        .narrative-img img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease;
+        }
+        
+        .narrative-card:hover .narrative-img img {
+            transform: scale(1.02);
+        }
+        
+        .narrative-content {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+            border-top: 5px solid var(--color-red-thread);
+        }
+        
+        .narrative-content:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 3px;
+            background-color: var(--color-red-thread);
+        }
+        
+        .narrative-card:not(.reverse) .narrative-content:before {
+            left: -40px;
+        }
+        
+        .narrative-card.reverse .narrative-content:before {
+            right: -40px;
+        }
+        
+        .narrative-number {
+            position: absolute;
+            top: -20px;
+            left: 30px;
+            width: 40px;
+            height: 40px;
+            background-color: var(--color-red-thread);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .narrative-quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--color-dark);
+            border-left: 4px solid var(--color-gold);
+            padding-left: 20px;
+            margin: 20px 0;
+            background-color: rgba(201, 169, 110, 0.1);
+            padding: 15px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        
+        /* Connection Banner */
+        .connection-banner {
+            background: linear-gradient(rgba(139, 30, 30, 0.9), rgba(139, 30, 30, 0.8)), 
+                        url('images/фон_2.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            margin: 80px 0;
+        }
+        
+        .connection-title {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: white;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .connection-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 3px;
+            background-color: var(--color-gold);
+        }
+        
+        .connection-text {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+        
+        .connection-stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        
+        .stat-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            min-width: 200px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--color-gold);
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        /* Gallery */
+        .gallery-section {
+            background-color: var(--color-light);
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            background-color: var(--color-accent);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .gallery-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            height: 350px;
+            background-color: white;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .gallery-item:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent 60%, rgba(139, 30, 30, 0.7));
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-item:hover:before {
+            opacity: 1;
+        }
+        
+        .gallery-img {
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-caption {
+            padding: 20px;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .gallery-caption h4 {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .gallery-caption p {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+        
+        /* Details Section */
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .detail-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: all 0.3s ease;
+            border-top: 5px solid var(--color-accent);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .detail-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background-color: var(--color-red-thread);
+            transform: translateX(-100%);
+            transition: transform 0.5s ease;
+        }
+        
+        .detail-card:hover:before {
+            transform: translateX(0);
+        }
+        
+        .detail-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .detail-icon {
+            font-size: 2.5rem;
+            color: var(--color-accent);
+            margin-bottom: 20px;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--color-dark);
+            color: white;
+            padding: 80px 0 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .footer:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--color-red-thread), var(--color-gold), var(--color-red-thread));
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .victory-message {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: var(--color-gold);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .victory-message:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 3px;
+            background-color: var(--color-red-thread);
+        }
+        
+        .footer-quote {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 40px;
+            color: var(--color-light);
+            line-height: 1.8;
+        }
+        
+        .museum-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: var(--color-gold);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+            padding: 10px 0;
+        }
+        
+        .museum-link:hover {
+            border-bottom: 1px solid var(--color-gold);
+        }
+        
+        .copyright {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+        
+        /* Modal Styles - ЭТО НОВЫЙ КОД ДЛЯ ИСПРАВЛЕНИЯ ПРОБЛЕМЫ */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 20px;
+        }
+        
+        .modal-content {
+            background-color: white;
+            max-width: 900px;
+            margin: 50px auto;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            animation: modalFadeIn 0.5s ease;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+        
+        .modal-header {
+            padding: 25px 30px 15px;
+            background-color: var(--color-dark);
+            color: white;
+            position: relative;
+        }
+        
+        .modal-header h3 {
+            color: white;
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2.5rem;
+            cursor: pointer;
+            line-height: 1;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            border-radius: 50%;
+        }
+        
+        .modal-close:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: rotate(90deg);
+        }
+        
+        .modal-body {
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .modal-img {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .modal-img img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .modal-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .detail-item {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .detail-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .detail-item h4 {
+            color: var(--color-accent);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .detail-item h4:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 5px;
+            background-color: var(--color-red-thread);
+            border-radius: 50%;
+        }
+        
+        .detail-item p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        
+        @keyframes redThreadPulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+        
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Progress bar for storytelling */
+        .story-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: rgba(139, 30, 30, 0.1);
+            z-index: 1000;
+        }
+        
+        .story-progress-bar {
+            height: 100%;
+            background-color: var(--color-red-thread);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .typing-animation {
+                font-size: 1.4rem;
+            }
+            
+            .narrative-card, .narrative-card.reverse {
+                flex-direction: column;
+            }
+            
+            .narrative-content:before {
+                display: none;
+            }
+            
+            .connection-title {
+                font-size: 2rem;
+            }
+            
+            .connection-text {
+                font-size: 1.1rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .red-thread {
+                display: none;
+            }
+            
+            .modal-body {
+                padding: 20px;
+            }
+            
+            .modal-header {
+                padding: 20px 25px 10px;
+            }
+            
+            .modal-header h3 {
+                font-size: 1.5rem;
+                padding-right: 40px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .btn {
+                padding: 12px 30px;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .connection-stats {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .modal-body {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .modal-img, .modal-info {
+                min-width: 100%;
+            }
+        }
+        /* В разделе стилей добавьте: */
+        .icon-yarn {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%238b1e1e' stroke='%23c9a96e' stroke-width='2'/%3E%3Cpath d='M30,50 Q50,30 70,50 Q50,70 30,50' fill='none' stroke='%23f8f5f0' stroke-width='8'/%3E%3Cpath d='M40,50 Q50,40 60,50 Q50,60 40,50' fill='none' stroke='%23f8f5f0' stroke-width='6'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <!-- Progress bar -->
+    <div class="story-progress">
+        <div class="story-progress-bar" id="progressBar"></div>
+    </div>
+    
+    <!-- Red thread visual element -->
+    <div class="red-thread" id="redThread"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Путь к Победе лежал через их руки</h1>
+            <div class="hero-subtitle">Как хрупкие женщины-медики вынесли на своих плечах 17 миллионов солдат</div>
+            
+            <div class="hero-quote">
+                "Без их стойкости не было бы нашей Победы. Каждый спасенный солдат — это их вклад в Великий май 1945-го"
+            </div>
+            
+            <div class="typing-animation">
+                <span class="typing-text">1942-1944. Волховский и Карельский фронты. История, написанная кровью и милосердием.</span>
+            </div>
+            <a href="#story" class="btn">Пройти путь к Победе</a>
+        </div>
+    </section>
+
+    <!-- Narrative Section -->
+    <section class="narrative-section" id="story">
+        <div class="container">
+            <h2 class="narrative-title">Нить Победы: от первого ранения до последнего салюта</h2>
+            
+            <div class="narrative-card">
+                <div class="narrative-img">
+                    <img src="images/Вера Бельская.png" alt="Вера Бельская">
+                    <div class="thread-knot" style="top: 50%;"></div>
+                </div>
+                <div class="narrative-content">
+                    <div class="narrative-number">1</div>
+                    <h3>Начало пути: карандаш вместо винтовки</h3>
+                    <p>Вера Бельская ушла на фронт студенткой-архитектором, но вместо чертежей зданий стала создавать портреты тех, кто спасал жизни. Её рисунки — это не просто искусство, а документальное свидетельство того, как ковалась Победа.</p>
+                    <div class="narrative-quote">
+                        "Каждый её рисунок — это история спасения. Каждый портрет — судьба, вплетенная в общую нить Победы"
+                    </div>
+                    <p>Пока одни сражались с оружием в руках, она сражалась карандашом, сохраняя для истории лица тех, чей подвиг был негромким, но определяющим.</p>
+                </div>
+            </div>
+            
+            <div class="narrative-card reverse">
+                <div class="narrative-img">
+                    <img src="images/Работа медиков.jpg" alt="Работа медиков">
+                    <div class="thread-knot" style="top: 50%;"></div>
+                </div>
+                <div class="narrative-content">
+                    <div class="narrative-number">2</div>
+                    <h3>Цена каждого спасения</h3>
+                    <p>За каждым вернувшимся в строй солдатом стояли десятки женщин-медиков, работавших в нечеловеческих условиях. Холод, голод, постоянная опасность — но они продолжали спасать.</p>
+                    <div class="narrative-quote">
+                        "Медаль почернела на передовой" — простая надпись на рисунке, за которой стоит ежедневный подвиг под огнем
+                    </div>
+                    <p>Их оружием были бинты и скальпели, их броней — белый халат, их силой — безграничное милосердие. Именно эта "тихая" битва за каждую жизнь в итоге решила исход войны.</p>
+                </div>
+            </div>
+            
+            <div class="narrative-card">
+                <div class="narrative-img">
+                    <img src="images/Вязание среди войны.jpg" alt="Женщины на фронте">
+                    <div class="thread-knot" style="top: 50%;"></div>
+                </div>
+                <div class="narrative-content">
+                    <div class="narrative-number">3</div>
+                    <h3>Человечность среди ужаса</h3>
+                    <p>Даже в аду войны они оставались людьми. Вязали в перерывах между операциями, писали письма, делились последним. Эта человечность была их оружием против бесчеловечности войны.</p>
+                    <div class="narrative-quote">
+                        "Руки недорисованные, заняты вязанием" — в этой детали весь смысл: жизнь продолжается даже на краю пропасти
+                    </div>
+                    <p>Их способность сохранять человеческое достоинство, заботиться не только о физических, но и о душевных ранах — вот что действительно приближало Победу.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connection Banner -->
+    <section class="connection-banner">
+        <div class="container">
+            <h2 class="connection-title">Их руки — наша Победа</h2>
+            <div class="connection-text">
+                Каждая перевязка, каждая проведенная операция, каждый вынесенный с поля боя раненый — это был не просто медицинский акт. Это был кирпичик в фундаменте будущей Победы. 17 миллионов возвращенных в строй солдат — это 17 миллионов шансов, которые они подарили стране.
+            </div>
+            
+            <div class="connection-stats">
+                <div class="stat-item">
+                    <div class="stat-number">> 70%</div>
+                    <div class="stat-label">раненых возвращались в строй благодаря женщинам-медикам</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1 к 5</div>
+                    <div class="stat-label">соотношение потерь среди медиков и обычных бойцов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">работали в условиях непрерывного напряжения</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Лица, которые спасли Победу</h2>
+            <div class="gallery-intro">
+                Каждый из этих портретов — не просто изображение. Это история того, как хрупкость становилась силой, как страх превращался в мужество, как обычные девушки совершали невозможное. И за каждой из этих историй — десятки спасенных жизней, которые в итоге и сложились в общую Победу.
+            </div>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="section" id="details">
+        <div class="container">
+            <h2 class="section-title">Хрупкость и несгибаемость: формула Победы</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 50px; font-size: 1.2rem;">Именно в этом парадоксе — нежной силе, уязвимой стойкости — и кроется секрет того, как они смогли выстоять и помочь выстоять другим.</p>
+            
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3>Тепло среди холода</h3>
+                    <p>Работали в мороз, когда металл инструментов прилипал к рукам. Но их теплое отношение согревало раненых больше, чем любые печки.</p>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Награды, которые молчат</h3>
+                    <p>Их медали не блестели на парадах — они чернели в дыму передовой. Но каждая такая почерневшая медаль стоила больше десятка парадных.</p>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-socks"></i>
+                    </div>
+                    <h3>Нить жизни</h3>
+                    <p>Одной нитью перевязывали раны, другой — вязали носки для бойцов. Обе нити были одинаково важны для Победы.</p>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Жизнь любой ценой</h3>
+                    <p>Ели щавель, шли нагишом через реки, но продолжали спасать других. Их инстинкт жизни был сильнее инстинкта самосохранения.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="victory-message">Их подвиг вплетен в салют Победы</div>
+                
+                <div class="footer-quote">
+                    "9 мая 1945 года салютовали не только танкисты, летчики и пехотинцы. Салютовали и те, кто вернул им возможность сражаться. Каждый залп победного салюта — это и их залп. Каждый вернувшийся солдат — это и их победа."
+                </div>
+                
+                <p>Мы помним. Мы благодарим. Мы понимаем, что без них не было бы этого дня.</p>
+                
+                <a href="https://milmed.spb.ru/" class="museum-link" target="_blank">Увидеть оригинальные рисунки Веры Бельской в Военно-медицинском музее →</a>
+                
+                <div class="copyright">
+                    Виртуальная выставка создана к юбилею Великой Победы. <br>
+                    Каждый портрет — напоминание о том, какой ценой и чьими руками она была добыта.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Заголовок</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-img">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <div class="detail-item">
+                        <h4>Их вклад в Победу</h4>
+                        <p id="modalRole">Роль</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Живое свидетельство</h4>
+                        <p id="modalMemory">Воспоминания</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Деталь, которая говорит больше слов</h4>
+                        <p id="modalDetail">Деталь</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Прямая связь с Победой</h4>
+                        <p id="modalBio">Биография</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Gallery data with stronger narrative connection
+        const galleryData = [
+            {
+                id: 1,
+                name: "Эвакопалатка, январь 1943",
+                date: "Точка отсчета спасения",
+                front: "volhov",
+                hasStory: true,
+                role: "Здесь начинался путь раненого бойца к выздоровлению и возвращению на фронт",
+                memory: "«Раненые лежали в одежде и валенках... медсестра при свете керосинки что-то записывает» — первая медицинская помощь, первый шаг к спасению, первый вклад в общую Победу.",
+                detail: "Керосиновая лампа в кромешной тьме войны — символ надежды, который они несли",
+                bio: "Именно с таких палаток начинался долгий путь 17 миллионов бойцов обратно в строй. Каждый, кто прошел через эти руки, вносил свой вклад в будущую Победу.",
+                image: "images/Эквакопалатка.jpg"
+            },
+            {
+                id: 2,
+                name: "Лидия Балашова",
+                date: "Студентка → лейтенант → Победа",
+                front: "volhov",
+                hasStory: true,
+                role: "Её руки вернули в строй десятки бойцов, каждый из которых приближал 9 мая",
+                memory: "«Моя Лидка. Мы расстались навсегда» — но её дело живет в каждом солдате, которого она спасла.",
+                detail: "Добровольно сменила студенческую скамью на фронтовой госпиталь",
+                bio: "После войны работала на Крайнем Севере — так же самоотверженно, как и на фронте. Её жизнь — прямая линия от военного подвига к мирному созиданию.",
+                image: "images/Лидия Балашова.jpg"
+            },
+            {
+                id: 3,
+                name: "Медаль, почерневшая в бою",
+                date: "Награда, которая не блестит",
+                front: "volhov",
+                hasStory: true,
+                role: "Символ того, что настоящий подвиг совершается не для парадов, а для спасения жизней",
+                memory: "Медаль Клавдии Седовой почернела не от времени — от дыма и копоти передовой.",
+                detail: "Настоящие награды не блестят — они пахнут порохом и йодом",
+                bio: "Каждая такая почерневшая медаль — это десятки спасенных жизней, сотни перевязок под огнем, тысячи бессонных ночей. И каждая спасенная жизнь — это вклад в Победу.",
+                image: "images/Медаль почерневшая в бою.jpg"
+            },
+            {
+                id: 4,
+                name: "Военфельдшер Ткач",
+                date: "Орден на груди, коса на спине",
+                front: "karelian",
+                hasStory: true,
+                role: "Вынесла с поля боя десятки раненых — дала стране десятки шансов на Победу",
+                memory: "Девушка с длинными косами и орденом на груди — идеальный портрет той самой «хрупкой несгибаемости».",
+                detail: "Её косички развевались на ветру, когда она ползла под обстрелом к раненым",
+                bio: "Неизвестная героиня, чей конкретный вклад в Победу измерить невозможно, но без которого общая победа была бы невозможна.",
+                image: "images/Военфельдшер Ткач.jpg"
+            },
+            {
+                id: 5,
+                name: "Вязание среди войны",
+                date: "Нить жизни в аду",
+                front: "volhov",
+                hasStory: true,
+                role: "Сохраняла человечность там, где её пытались уничтожить",
+                memory: "«Руки недорисованные, заняты вязанием» — в перерыве между спасением жизней она вязала носки для бойцов.",
+                detail: "Одной нитью перевязывала раны, другой — вязала тепло для живых",
+                bio: "Это вязание было таким же оружием против войны, как и скальпель. Оно напоминало: жизнь продолжается, человечность побеждает.",
+                image: "images/Вязание среди войны.jpg"
+            },
+            {
+                id: 6,
+                name: "Маруся «Чижик», 16 лет",
+                date: "Детство, отданное войне",
+                front: "volhov",
+                hasStory: true,
+                role: "В 16 лет уже спасала жизни там, где другие в этом возрасте их только начинали",
+                memory: "Утверждала, что ей всего 16 лет и что уже была на фронте. Война украла её юность, но не смогла украсть её мужество.",
+                detail: "Хрипловатый голос от постоянного напряжения и курения «для храбрости»",
+                bio: "Таких как она были тысячи. Они взрослели за один день, становились героями за одну ночь. И их преждевременно повзрослевшая отвага стала одним из кирпичиков Победы.",
+                image: "images/Маруся Чижик.jpg"
+            },
+            {
+                id: 7,
+                name: "220 км нагишом со щавелем",
+                date: "Цена выживания",
+                front: "volhov",
+                hasStory: true,
+                role: "Чтобы продолжать спасать других, нужно было сначала выжить самой",
+                memory: "«Переплывала Днепр. 220 км. Шла. Сначала нагишом. Кушали щавель» — выживание как подвиг.",
+                detail: "Щавель стал для них и едой, и лекарством, и символом упрямого желания жить",
+                bio: "Их история выживания — это метафора всей страны: оголенная, израненная, но не сломленная. И именно такое упрямство в конечном счете и привело к Победе.",
+                image: "images/путь 220 км.jpg"
+            },
+            {
+                id: 8,
+                name: "Последний рисунок перед Победой",
+                date: "Март 1944",
+                front: "volhov",
+                hasStory: true,
+                role: "Они уже знали, что Победа близка, но продолжали работать так, будто от этого зависит всё",
+                memory: "«Маруся Сысоева спит, сидя на чемодане» — короткая передышка в бесконечном пути к Победе.",
+                detail: "Спит сидя, готовясь к следующему броску — к следующему спасению",
+                bio: "До Победы оставался год. Самый тяжелый, самый кровопролитный. Но они уже видели свет в конце тоннеля и шли к нему, спасая на своем пути всех, кого могли спасти.",
+                image: "images/последний рисунок.jpg"
+            }
+        ];
+
+        // DOM elements
+        const galleryGrid = document.querySelector('#galleryGrid');
+        const modal = document.getElementById('imageModal');
+        const modalClose = document.getElementById('modalClose');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalImage = document.getElementById('modalImage');
+        const modalRole = document.getElementById('modalRole');
+        const modalMemory = document.getElementById('modalMemory');
+        const modalDetail = document.getElementById('modalDetail');
+        const modalBio = document.getElementById('modalBio');
+        const redThread = document.getElementById('redThread');
+        const progressBar = document.getElementById('progressBar');
+
+        // Initialize gallery
+        function initGallery() {
+            galleryGrid.innerHTML = '';
+            
+            galleryData.forEach(item => {
+                const galleryItem = document.createElement('div');
+                galleryItem.className = 'gallery-item';
+                galleryItem.setAttribute('data-front', item.front);
+                galleryItem.setAttribute('data-story', item.hasStory);
+                
+                galleryItem.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h4>${item.name}</h4>
+                        <p>${item.date}</p>
+                    </div>
+                `;
+                
+                galleryItem.addEventListener('click', () => openModal(item));
+                galleryGrid.appendChild(galleryItem);
+            });
+        }
+
+        // Open modal
+        function openModal(item) {
+            modalTitle.textContent = item.name;
+            modalImage.src = item.image;
+            modalImage.alt = item.name;
+            modalRole.textContent = item.role;
+            modalMemory.textContent = item.memory;
+            modalDetail.textContent = item.detail;
+            modalBio.textContent = item.bio;
+            
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+            
+            console.log('Modal opened for:', item.name); // Для отладки
+        }
+
+        // Close modal
+        modalClose.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === 'block') {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Create red thread knots
+        function createThreadKnots() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach((section, index) => {
+                const rect = section.getBoundingClientRect();
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const sectionTop = rect.top + scrollTop;
+                
+                if (index > 0 && index < sections.length - 1) {
+                    const knot = document.createElement('div');
+                    knot.className = 'thread-knot';
+                    knot.style.top = `${sectionTop}px`;
+                    document.body.appendChild(knot);
+                }
+            });
+        }
+
+        // Update progress bar
+        function updateProgressBar() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            progressBar.style.width = scrolled + "%";
+            
+            // Pulse animation for red thread
+            redThread.style.animation = `redThreadPulse ${2 - scrolled/100}s infinite`;
+        }
+
+        // Typing effect
+        const typingText = document.querySelector('.typing-text');
+        const texts = [
+            "1942-1944. От первого ранения до последнего салюта.",
+            "Как руки женщин-медиков держали нить Победы.",
+            "17 миллионов спасенных жизней — их вклад в Великий май."
+        ];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 100;
+
+        function typeEffect() {
+            const currentText = texts[textIndex];
+            
+            if (isDeleting) {
+                typingText.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+                typingSpeed = 50;
+            } else {
+                typingText.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+                typingSpeed = 100;
+            }
+            
+            if (!isDeleting && charIndex === currentText.length) {
+                isDeleting = true;
+                typingSpeed = 1500;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+                typingSpeed = 500;
+            }
+            
+            setTimeout(typeEffect, typingSpeed);
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            initGallery();
+            createThreadKnots();
+            
+            // Start typing effect
+            setTimeout(typeEffect, 1000);
+            
+            // Update progress bar on scroll
+            window.addEventListener('scroll', updateProgressBar);
+            
+            // Initial progress bar update
+            updateProgressBar();
+            
+            // Debug: log gallery items
+            console.log('Gallery initialized with', galleryData.length, 'items');
+        });
+
+        // Scroll to sections smoothly
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
